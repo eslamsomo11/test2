@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بحبك يا مريم</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffe4e1;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #b22222;
+        }
+        .heart {
+            font-size: 5rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .heart:hover {
+            transform: scale(1.2);
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 2rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="heart" onclick="showMessage()">❤️</div>
+        <div id="message">بحبك يا مريم ❤️❤️❤️</div>
+    </div>
+    <script>
+        function showMessage() {
+            const message = document.getElementById('message');
+            message.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
