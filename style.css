@@ -1,0 +1,73 @@
+/* ملف CSS - style.css */
+
+/* تحديد الخلفية */
+body {
+    background-image: url('./background.jpg'); /* تأكد من أن الصورة في نفس المجلد */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+/* تنسيق القلب والعقل */
+.heart, .brain {
+    font-size: 2rem; /* حجم النص الطبيعي */
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 182, 193, 0.8); /* لون وردي */
+    cursor: pointer;
+}
+
+/* إضافة تأثير نبض للقلب */
+.heart {
+    position: relative;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* إخفاء النصوص في البداية */
+.hidden {
+    display: none;
+}
+
+/* تنسيق النص اللي بيظهر بعد الضغط */
+#heart-text, #brain-text {
+    font-size: 2.5rem; /* جعل النص أكبر */
+    font-weight: bold; /* جعل النص بولد */
+    color: #ff69b4; /* لون بينك */
+}
+
+/* تنسيق النص داخل الخانة الخاصة بالنصائح */
+.advice {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(240, 248, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: right;
+}
+
+/* تنسيق العنوان */
+h1 {
+    font-size: 2.5rem;
+    color: #b22222; /* لون أحمر */
+}
+
+h3 {
+    color: #555;
+}
